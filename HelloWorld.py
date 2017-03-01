@@ -1,3 +1,5 @@
+import time
+import calendar
 #print
 print "Hello, Python"
 
@@ -71,9 +73,46 @@ print tinydict.values() # Prints all the values
 a = 10
 b = 20
 c = 2
-
 print str(a) + " + " + str(b) + " = " + str((a+b))
 print str(a) + " - " + str(b) + " = " + str((a-b))
 print str(a) + " * " + str(b) + " = " + str((a*b))
 print str(b) + " / " + str(a) + " = " + str((b/a))
 print str(c) + " to the power of " + str(a) + " = " + str((2**10))
+
+#statment suites
+var = 120
+
+if var <=100 :
+        print "The value is 100 or less"
+elif var >= 101 and var <= 110:
+        print "The value is greater than 100 & less than 110"
+elif var >= 111 and var <= 120:
+        print "The value is greater than 110 & less than 120"
+else:
+        print "The value is " + str(var) + " not 100"
+
+#while loop
+count = 0;
+
+while(count <= 10):
+                print "Number: " + str(count)
+                count = count + 1
+print "\n\t\tExited while loop"
+
+#For loop
+tables = 12
+j = 0
+for  j in range(0,13):
+        print str(j) + " x " + str(12) + " = " + str((j*12))
+
+print "Number of ticks since 12 am: "  + str(time.time())
+print calendar.month(2017,3)
+num = 0
+#functions
+def makeTables(timesTables, HighestNum):
+
+        for timesTables in range(0, HighestNum+1):
+                print str(num) + " x " + str(timesTables) + " = " + str(num*timesTables)
+        return
+
+makeTables(12,12)
